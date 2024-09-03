@@ -2,4 +2,39 @@ body {
   color: getColor('primary-text');
   background-color: getColor('body-bg');
   font-family: $body-font-family;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.section {
+  padding: 26px 0;
+
+  @media (768px<=width) {
+    padding: 40px 0;
+  }
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 32px;
+
+  @media (375px<=width) {
+    max-width: getBreakPoint('mobile');
+  }
+
+  @media (768px<=width) {
+    max-width: getBreakPoint('tablet');
+    padding: 0 20px;
+  }
+  @media (1440px<=width) {
+    max-width: getBreakPoint('desktop');
+    padding: 0 135px;
+  }
+  @media (1920px<=width) {
+    max-width: getBreakPoint('desktop-large');
+    padding: 0 375px;
+  }
 }
