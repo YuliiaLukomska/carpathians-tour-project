@@ -1,0 +1,5 @@
+body {
+  color: getColor('primary-text');
+  background-color: getColor('body-bg');
+  font-family: $body-font-family;
+}
