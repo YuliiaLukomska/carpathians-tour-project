@@ -1,0 +1,20 @@
+.page-header {
+  background-color: gray;
+}
+
+// вище стилі видалити
+
+.nav-menu {
+  display: none;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  fill: getColor('light-icon');
+}
+.burger-menu {
+  stroke: getColor('light-icon');
+}
