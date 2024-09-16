@@ -12,9 +12,93 @@
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+.logo-icon {
   fill: getColor('light-icon');
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
 }
 .burger-menu {
   stroke: getColor('light-icon');
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
+.nav-menu {
+  @media screen and (max-width: 1439.98px) {
+    display: none;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  color: getColor('light-text');
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+.nav-menu_item {
+  position: relative;
+}
+.nav-menu_link {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-menu_link:hover,
+.nav-menu_link:focus {
+  color: getColor('secondary-text');
+}
+.nav-menu_link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: getColor('secondary-text');
+  width: 0;
+  height: 1px;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+}
+
+.nav-menu_link:hover::after,
+.nav-menu_link:focus::after {
+  color: getColor('secondary-text');
+  width: 100%;
+}
+
+// .animation {
+//   display: block;
+//   position: absolute;
+//   width: 40px;
+//   height: 40px;
+//   top: 50%;
+//   left: 50%;
+//   border: none;
+//   border-radius: 50%;
+//   mix-blend-mode: multiply;
+//   box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 27.0718px 0px inset,
+//     rgba(0, 0, 0, 0.06) 0px 0px 20.1608px 0px inset,
+//     rgba(0, 0, 0, 0.04) 0px 6.76798px 13.536px 0px inset,
+//     rgba(0, 0, 0, 0.04) 0px 3.38398px 3.38398px 0px inset;
+//   filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 6.76798px 13.536px);
+//   background: linear-gradient(rgb(244, 249, 15) 0%, rgb(140, 249, 96) 100%);
+//   animation: 8s cubic-bezier(0.3, -0.7, 0.8, 1.7) 0s infinite normal none
+//     running Djnkf;
+// }
+// @keyframes Djnkf {
+//   0% {
+//     transform: translate(10%, -25%);
+//   }
+//   25% {
+//     transform: translate(-170%, 10%);
+//   }
+//   50% {
+//     transform: translate(-80%, 70%);
+//   }
+//   75% {
+//     transform: translate(35%, 20%);
+//   }
+//   100% {
+//     transform: translate(10%, -25%);
+//   }
+// }

@@ -1,7 +1,7 @@
 .modal-menu.is-hidden {
   display: none;
 }
-.bg-modal-menu.hidden {
+.overlay-modal-menu.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -9,7 +9,7 @@
 .modal-menu {
   background-color: gray;
 }
-.bg-modal-menu {
+.overlay-modal-menu {
   background-color: bisque;
 }
 .burger-menu-close {
