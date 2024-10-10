@@ -1,0 +1,81 @@
+.wrapper {
+  background-color: getColor('footer-bg');
+  background-image: url(../../img/hero/hero-bg_mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-resolution: 192dpi) {
+    background-image: url(../../img/hero/hero-bg_mob@2x.jpg);
+  }
+}
+.hero-title {
+  color: getColor('light-text');
+  text-align: center;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.hero-description {
+  color: getColor('light-text');
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04em;
+  margin-bottom: 88px;
+}
+.button {
+  display: block;
+  color: getColor('light-text');
+  text-transform: uppercase;
+  text-align: center;
+  width: 285px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: getColor('button-bg');
+  min-height: 52px;
+}
+.hero-animation-wrapper {
+  position: relative;
+}
+.hero-animation {
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 5px;
+  left: 50%;
+  border: none;
+  border-radius: 50%;
+  mix-blend-mode: overlay;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 27.0718px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 0px 20.1608px 0px inset,
+    rgba(0, 0, 0, 0.04) 0px 6.76798px 13.536px 0px inset,
+    rgba(0, 0, 0, 0.04) 0px 3.38398px 3.38398px 0px inset;
+  filter: drop-shadow(rgba(0, 0, 0, 0.04) 0px 6.76798px 13.536px);
+  background: linear-gradient(
+    rgb(204, 131, 15) 0%,
+    rgba(248, 160, 20, 0.804) 100%
+  );
+  animation: 15s cubic-bezier(0.3, -0.7, 0.8, 1.7) 0s infinite normal none
+    running Djnkf;
+}
+@keyframes Djnkf {
+  0% {
+    transform: translate(10%, -25%);
+  }
+  25% {
+    transform: translate(-170%, 10%);
+  }
+  50% {
+    transform: translate(-80%, 70%);
+  }
+  75% {
+    transform: translate(35%, 20%);
+  }
+  100% {
+    transform: translate(10%, -25%);
+  }
+}
